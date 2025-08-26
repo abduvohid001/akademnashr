@@ -35,8 +35,12 @@ body {
 .sitenav-list {
   display: flex;
   list-style: none;
-  gap: 15px;
   padding: 0;
+  margin: 0;
+}
+
+.sitenav-item {
+  margin-right: 32px;
 }
 
 .nav-links {
@@ -91,6 +95,13 @@ body {
 
 .hero-heading {
   font-family: "Roboto", sans-serif;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .hero-content {
@@ -102,6 +113,8 @@ width: 80px;
 height: 5px;
 background-color: #ff7500;
 border: 0;
+margin: 0;
+margin-bottom: 40px;
 }
 
 .hero-img {
@@ -118,17 +131,25 @@ height: 510px;
 width: 440px;
 font-size: 72;
 line-height: 1.2;
+margin-top: 0;
+margin-bottom: 72px;
 }
 
 .feature {
 width: 340px;
 list-style: none;
+margin-right: 40px;
+}
+
+.feature:last-child {
+  margin-right: 0;
 }
 
 .feature-list {
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0;
 }
 
 .feature-title {
@@ -152,6 +173,21 @@ list-style: none;
 .promo-heading {
   font-size: 40px;
   line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.promo-text {
+margin: 0;
+margin-bottom: 12px;
+}
+
+.promo-text:last-child {
+  margin-bottom: 0;
+}
+
+.promo-info-wrapper {
+  margin-bottom: 24px;
 }
 
 .promo-highlight {
@@ -187,8 +223,16 @@ list-style: none;
 .site-footer-icons {
   display: flex;
   align-items: center;
-  gap: 15px;
   padding: 0;
+  margin: 0;
+}
+
+.site-footer-icons li {
+margin-right: 16px;
+}
+
+.site-footer-icons li:last-child {
+  margin-right: 0;
 }
 
 .site-footer-icons a {
@@ -209,12 +253,20 @@ list-style: none;
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
   border: 0;
+  margin-top: 40px;
+  margin-bottom: 64px;
 }
 
 .site-footer-links {
   width: 224px;
   transition: color 0.4s ease, opacity 0.4s ease;
   padding: 0;
+  margin: 0;
+  margin-right: 68px;
+}
+
+.site-footer-links:last-child {
+  margin-right: 0;
 }
 
 .site-footer-links:hover {
