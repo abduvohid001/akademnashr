@@ -22,6 +22,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 5px solid #ff7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .site-header-actions {
@@ -33,6 +36,7 @@ body {
   display: flex;
   list-style: none;
   gap: 15px;
+  padding: 0;
 }
 
 .nav-links {
@@ -55,12 +59,16 @@ body {
 }
 
 .main-link {
+  display: inline-block;
+  padding: 12px 24px;
   font-size: 13px;
+  font-weight: bold;
   line-height: 15px;
   background-color: #ff7500;
   color: #fff;
   text-decoration: none;
   transition: opacity 0.4s ease;
+  border-radius: 4px;
 }
 
 .main-link:hover {
@@ -77,6 +85,8 @@ body {
   justify-content: space-between;
   background-color: black;
   color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .hero-heading {
@@ -89,13 +99,19 @@ width: 390px;
 
 .orange-line {
 width: 80px;
-height: 3px;
+height: 5px;
 background-color: #ff7500;
+border: 0;
 }
 
 .hero-img {
 width: 510px;
 height: 510px;
+}
+
+.features {
+  padding-top: 210px;
+  padding-bottom: 210px;
 }
 
 .features-heading {
@@ -112,7 +128,7 @@ list-style: none;
 .feature-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 0;
 }
 
 .feature-title {
@@ -126,6 +142,7 @@ list-style: none;
   align-items: center;
   background-color: black;
   color: white;
+  border-radius: 12px;
 }
 
 .promo-content {
@@ -147,6 +164,11 @@ list-style: none;
   object-fit: cover;
 }
 
+.site-footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
 .site-footer ul {
   list-style: none;
 }
@@ -166,6 +188,7 @@ list-style: none;
   display: flex;
   align-items: center;
   gap: 15px;
+  padding: 0;
 }
 
 .site-footer-icons a {
@@ -185,11 +208,13 @@ list-style: none;
 .site-footer-divider {
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
+  border: 0;
 }
 
 .site-footer-links {
   width: 224px;
   transition: color 0.4s ease, opacity 0.4s ease;
+  padding: 0;
 }
 
 .site-footer-links:hover {
