@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 16px;
@@ -6,7 +12,12 @@ body {
 }
 
 .logo-link {
+  display: block;
   transition: opacity 0.4s ease;
+}
+
+.logo-link img {
+  display: block;
 }
 
 .logo-link:hover {
@@ -15,6 +26,23 @@ body {
 
 .logo-link:active {
   opacity: 0.6;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-header {
@@ -108,6 +136,12 @@ body {
 width: 390px;
 }
 
+.hero-content-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
 .orange-line {
 width: 80px;
 height: 5px;
@@ -158,12 +192,18 @@ margin-right: 40px;
 }
 
 .promo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  color: white;
-  border-radius: 12px;
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.promo-inner {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+color: white;
+border-radius: 12px;
+padding: 64px;
 }
 
 .promo-content {
@@ -236,8 +276,13 @@ margin-right: 16px;
 }
 
 .site-footer-icons a {
+  display: block;
   color: black;
-   transition: color 0.4s ease, opacity 0.4s ease;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+
+.site-footer-icons svg {
+  display: block;
 }
 
 
@@ -263,6 +308,14 @@ margin-right: 16px;
   padding: 0;
   margin: 0;
   margin-right: 68px;
+}
+
+.site-footer-links li {
+margin-bottom: 16px;
+}
+
+.site-footer-links li:last-child {
+margin-bottom: 0;
 }
 
 .site-footer-links:last-child {
